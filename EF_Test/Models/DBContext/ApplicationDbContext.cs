@@ -11,7 +11,7 @@ namespace EF_Test.Models.DBContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(Connections.sqlConStr);
+            options.UseSqlServer(Connections.connectionString);
         }
         public DbSet<Student> Students { get; set; }
     }
